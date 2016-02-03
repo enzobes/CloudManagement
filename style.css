@@ -220,18 +220,18 @@ header,
 section.highlight .bg1,
 section.highlight .bg2 {
 background-color:#FFF;
-background-size:cover !important;
+background-size:cover!important;
 
 -moz-background-size:cover;
 -o-background-size:cover;
 -webkit-background-size:cover
 }
 
-header { background:url(http://placehold.it/2400x1350) 50% 0 no-repeat }
+header { background:url(images/wally.jpg)50% 0% no-repeat}
 section.single { background:url(http://placehold.it/1920x1080) 50% 0 no-repeat }
-section.highlight .bg1 { background:url(http://placehold.it/1920x1080) 50% 0 no-repeat }
+/*section.highlight .bg1 { background:url(http://placehold.it/1920x1080) 50% 0 no-repeat }
 section.highlight .bg2 { background:url(http://placehold.it/1920x1080) 50% 50% no-repeat }
-
+*/
 /* sections
 ================================================== */
 header,
