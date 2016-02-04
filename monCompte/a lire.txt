@@ -1,4 +1,0 @@
-j'arrive pas a faire comme ldlc : 
-quand tu affiche le bloc, si tu quitte avec la souris en allant sur le côtés ça reste car en fait cst une div, ça prend donc toute la largeur. Mais si tu met la souris en dessous ça quitte
-
-j'ai essayé en css, mais ça a des limites vu qu'en fait j'affiche et je cache toute une div, donc le blanc sur le côté aussi
