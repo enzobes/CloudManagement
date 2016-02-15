@@ -12,7 +12,7 @@
 
         <link href="vendors/bower_components/animate.css/animate.min.css" rel="stylesheet">
         <link href="vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" rel="stylesheet">
-        <link href="vendors/bower_components/lightgallery/src/css/lightgallery.css" rel="stylesheet">
+        <link href="vendors/bower_components/fullcalendar/dist/fullcalendar.min.css" rel="stylesheet">
         <link href="vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet">
 
         <link href="css/app.min.css" rel="stylesheet">
@@ -405,487 +405,144 @@
 
         <aside id="sidebar">
 
-            <!--| MAIN MENU |-->
-            <ul class="side-menu">
-                <li class="sm-sub sms-profile">
-                    <a class="clearfix" href="">
-                        <img src="img/profile-pic.jpg" alt="">
+          <!--| MAIN MENU |-->
+          <ul class="side-menu">
+              <li class="sm-sub sms-profile">
+                  <a class="clearfix" href="">
+                      <img src="img/profile-pic.jpg" alt="">
 
-                        <span class="f-11">
-                            <span class="d-block">Nom Prenom</span>
-                            <small class="text-lowercase">@nom-prenom</small>
-                        </span>
-                    </a>
+                      <span class="f-11">
+                          <span class="d-block">Nom Prenom</span>
+                          <small class="text-lowercase">@nom-prenom</small>
+                      </span>
+                  </a>
 
-                    <ul>
-                        <li><a href="profile-about.html">Mon compte</a></li>
-                        <li><a href="">Mes outils</a></li>
-                        <li><a href="">Déconnexion</a></li>
-                    </ul>
-                </li>
+                  <ul>
+                      <li><a href="profile-about.html">Mon compte</a></li>
+                      <li><a href="">Mes outils</a></li>
+                      <li><a href="">Déconnexion</a></li>
+                  </ul>
+              </li>
 
-                <li>
-                    <a href="">
-                        <i class="zmdi zmdi-home"></i>
-                        <span>Mon profil</span>
-                    </a>
-                </li>
 
-                <li class="sm-sub">
-                    <a href="">
-                        <i class="zmdi zmdi-collection-text"></i>
-                        <span>Mes projets <span class="label label-warning">New</span></span>
-                    </a>
-                    <ul>
-                        <li><a href="">Projets</a></li>
-                        <li><a href="taches.html">Tâches</a></li>
-                        <li><a href="">Timelines</a></li>
-                        <li class ="active"><a href="profil-connections.html">Groupes</a></li>
-                    </ul>
-                </li>
+              <li class="sm-sub active">
+                  <a href="">
+                      <i class="zmdi zmdi-collection-text"></i>
+                      <span>Mon profil</span>
+                  </a>
+                  <ul>
+                      <li ><a href="monProfil.html">Mon profil</a></li>
+                      <li ><a href="taches.html">Mes tâches</a></li>
+                      <li class="active"><a href="planning.html">Mon planning</a></li>
+                      <li><a href="mesInfosPerso.html">Mes informations</a></li>
+                  </ul>
+              </li>
 
-                <li>
-                    <a href="calendar.html">
-                        <i class="zmdi zmdi-calendar"></i>
-                        <span>Calendrier <span class="label label-primary">12</span></span>
-                    </a>
-                </li>
-                <li class="sm-sub">
-                    <a href="photo-timeline.html">
-                        <i class="zmdi zmdi-image"></i>
-                        <span>Timeline</span>
-                    </a>
+              <li class="sm-sub">
+                  <a href="">
+                      <i class="zmdi zmdi-collection-text"></i>
+                      <span>Mes projets <span class="label label-warning">New</span></span>
+                  </a>
+                  <ul>
+                      <li><a href="">Projets</a></li>
+                      <li><a href="taches.html">Tâches</a></li>
+                      <li><a href="">Timelines</a></li>
+                      <li class ="active"><a href="profil-connections.html">Groupes</a></li>
+                  </ul>
+              </li>
 
-                </li>
+              <li>
+                  <a href="calendar.html">
+                      <i class="zmdi zmdi-calendar"></i>
+                      <span>Calendrier <span class="label label-primary">12</span></span>
+                  </a>
+              </li>
+              <li class="sm-sub">
+                  <a href="photo-timeline.html">
+                      <i class="zmdi zmdi-image"></i>
+                      <span>Timeline</span>
+                  </a>
 
-                <li >
-                    <a href="messages.html">
+              </li>
+
+              <li >
+                  <a href="messages.html">
+                      <i class="zmdi zmdi-collection-item"></i>
+                      <span>Messages</span>
+                  </a>
+              <li>
+                <li class="sm-sub sms-bottom">
+                    <a href="contacts.html">
                         <i class="zmdi zmdi-collection-item"></i>
-                        <span>Messages</span>
+                        <span>Contacts</span>
                     </a>
-                <li>
-                  <li class="sm-sub sms-bottom">
-                      <a href="contacts.html">
-                          <i class="zmdi zmdi-collection-item"></i>
-                          <span>Contacts</span>
-                      </a>
 
 
 
-                </li>
-                <li>
-                    <a href="admin.html">
-                        <i class="zmdi zmdi-home"></i>
-                        <span>Admin</span>
-                    </a>
-                </li>
-            </ul>
+              </li>
+              <li>
+                  <a href="admin.html">
+                      <i class="zmdi zmdi-home"></i>
+                      <span>Admin</span>
+                  </a>
+              </li>
+          </ul>
         </aside>
 
+
         <section id="content">
-            <div class="container">
+            <div class="container c-boxed">
                 <header class="page-header">
-                    <h3>MALINDA HOLLAWAY <small>Web/UI Developer, Kandy, Sri Lanka</small></h3>
+                    <h3>Calendar <small>FullCalendar is a jQuery plugin that provides a full-sized, drag & drop event calendar like the one below. It uses AJAX to fetch events on-the-fly and is easily configured to use your own feed format. It is visually customizable with a rich API.</small></h3>
                 </header>
 
-                <div class="tile" id="profile-main">
-                    <div class="pm-overview c-overflow">
-                        <div class="pmo-pic">
-                            <div class="p-relative">
-                                <a href="">
-                                    <img class="img-responsive" src="img/profile-pics/profile-pic-2.jpg" alt="">
-                                </a>
+                <div id="calendar"></div>
 
-                                <div class="dropdown pmop-message">
-                                    <a data-toggle="dropdown" href="" class="pmopm-send">
-                                        <i class="zmdi zmdi-comment-text-alt"></i>
-                                    </a>
-
-                                    <div class="dropdown-menu">
-                                        <textarea placeholder="Write something..."></textarea>
-
-                                        <button class="btn bg-green btn-icon"><i class="zmdi zmdi-mail-send"></i></button>
+                <!-- Add event -->
+                <div class="modal fade" id="addNew-event" data-backdrop="static" data-keyboard="false">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Add an Event</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form class="addEvent" role="form">
+                                    <div class="form-group">
+                                        <label for="eventName">Event Name</label>
+                                        <div class="fg-line">
+                                            <input type="text" class="input-sm form-control" id="eventName" placeholder="eg: Sports day">
+                                        </div>
                                     </div>
-                                </div>
 
-                                <a href="" class="pmop-edit">
-                                    <i class="zmdi zmdi-camera"></i> <span class="hidden-xs">Update Profile Picture</span>
-                                </a>
+                                    <div class="form-group">
+                                        <label for="eventName">Tag Color</label>
+                                        <div class="event-tag">
+                                            <span data-tag="bg-teal" class="bg-teal selected"></span>
+                                            <span data-tag="bg-red" class="bg-red"></span>
+                                            <span data-tag="bg-pink" class="bg-pink"></span>
+                                            <span data-tag="bg-blue" class="bg-blue"></span>
+                                            <span data-tag="bg-lime" class="bg-lime"></span>
+                                            <span data-tag="bg-green" class="bg-green"></span>
+                                            <span data-tag="bg-cyan" class="bg-cyan"></span>
+                                            <span data-tag="bg-orange" class="bg-orange"></span>
+                                            <span data-tag="bg-purple" class="bg-purple"></span>
+                                            <span data-tag="bg-gray" class="bg-gray"></span>
+                                            <span data-tag="bg-black" class="bg-black"></span>
+                                        </div>
+                                    </div>
+
+                                    <input type="hidden" id="getStart" />
+                                    <input type="hidden" id="getEnd" />
+                                </form>
                             </div>
 
-
-                            <div class="pmo-stat">
-                                <h2 class="m-0 c-white">1562</h2>
-                                Total Connections
-                            </div>
-                        </div>
-
-                        <div class="pmo-block pmo-contact hidden-xs">
-                            <h2>Contact</h2>
-
-                            <ul>
-                                <li><i class="zmdi zmdi-phone"></i> 00971 12345678 9</li>
-                                <li><i class="zmdi zmdi-email"></i> malinda-h@gmail.com</li>
-                                <li><i class="zmdi zmdi-facebook-box"></i> malinda.hollaway</li>
-                                <li><i class="zmdi zmdi-twitter"></i> @malinda (twitter.com/malinda)</li>
-                                <li>
-                                    <i class="zmdi zmdi-pin"></i>
-                                    <address class="m-b-0">
-                                        10098 ABC Towers, <br/>
-                                        Dubai Silicon Oasis, Dubai, <br/>
-                                        United Arab Emirates
-                                    </address>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="pmo-block pmo-items hidden-xs">
-                            <h2>Connections</h2>
-
-                            <div class="pmob-body">
-                                <div class="row">
-                                    <a href="" class="col-xs-2">
-                                        <img class="img-avatar" src="img/profile-pics/1.jpg" alt="">
-                                    </a>
-                                    <a href="" class="col-xs-2">
-                                        <img class="img-avatar" src="img/profile-pics/2.jpg" alt="">
-                                    </a>
-                                    <a href="" class="col-xs-2">
-                                        <img class="img-avatar" src="img/profile-pics/3.jpg" alt="">
-                                    </a>
-                                    <a href="" class="col-xs-2">
-                                        <img class="img-avatar" src="img/profile-pics/4.jpg" alt="">
-                                    </a>
-                                    <a href="" class="col-xs-2">
-                                        <img class="img-avatar" src="img/profile-pics/5.jpg" alt="">
-                                    </a>
-                                    <a href="" class="col-xs-2">
-                                        <img class="img-avatar" src="img/profile-pics/6.jpg" alt="">
-                                    </a>
-                                    <a href="" class="col-xs-2">
-                                        <img class="img-avatar" src="img/profile-pics/7.jpg" alt="">
-                                    </a>
-                                    <a href="" class="col-xs-2">
-                                        <img class="img-avatar" src="img/profile-pics/8.jpg" alt="">
-                                    </a>
-                                    <a href="" class="col-xs-2">
-                                        <img class="img-avatar" src="img/profile-pics/1.jpg" alt="">
-                                    </a>
-                                    <a href="" class="col-xs-2">
-                                        <img class="img-avatar" src="img/profile-pics/2.jpg" alt="">
-                                    </a>
-                                    <a href="" class="col-xs-2">
-                                        <img class="img-avatar" src="img/profile-pics/3.jpg" alt="">
-                                    </a>
-                                    <a href="" class="col-xs-2">
-                                        <img class="img-avatar" src="img/profile-pics/4.jpg" alt="">
-                                    </a>
-                                </div>
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-primary btn-sm" id="addEvent">Add Event</button>
+                                <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
                             </div>
                         </div>
                     </div>
-
-                    <div class="pm-body clearfix">
-                        <ul class="tab-nav tn-justified">
-                            <li><a href="profile-about.html">About</a></li>
-                            <li><a href="profile-photos.html">Photos</a></li>
-                            <li class="active"><a href="profile-connections.html">Connections</a></li>
-                        </ul>
-
-                        <div class="pmb-block photos clearfix">
-                            <div class="p-header">
-                                <ul class="p-menu">
-                                    <li class="active"><a href=""><i class="zmdi zmdi-accounts-add hidden-xs"></i> Recommanded</a></li>
-                                    <li><a href=""><i class="zmdi zmdi-accounts hidden-xs"></i> Connected</a></li>
-                                    <li class="pm-search">
-                                        <div class="pms-inner">
-                                            <i class="zmdi zmdi-search"></i>
-                                            <input type="text" placeholder="Search...">
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="contacts c-profile clearfix row">
-                                    <div class="col-md-3 col-sm-4 col-xs-6">
-                                        <div class="c-item">
-                                            <a href="" class="ci-avatar">
-                                                <img src="img/contacts/1.jpg" alt="">
-                                            </a>
-
-                                            <div class="c-info">
-                                                <strong>Cathy Shelton</strong>
-                                                <small>cathy.shelton31@example.com</small>
-                                            </div>
-
-                                            <div class="c-footer">
-                                                <button><i class="zmdi zmdi-face-add"></i> Add</button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-3 col-sm-4 col-xs-6">
-                                        <div class="c-item">
-                                            <a href="" class="ci-avatar">
-                                                <img src="img/contacts/2.jpg" alt="">
-                                            </a>
-
-                                            <div class="c-info">
-                                                <strong>Stella Flores</strong>
-                                                <small>stella@example.com</small>
-                                            </div>
-
-                                            <div class="c-footer">
-                                                <button><i class="zmdi zmdi-face-add"></i> Add</button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-3 col-sm-4 col-xs-6">
-                                        <div class="c-item">
-                                            <a href="" class="ci-avatar">
-                                                <img src="img/contacts/3.jpg" alt="">
-                                            </a>
-
-                                            <div class="c-info">
-                                                <strong>Marilyn Thomas</strong>
-                                                <small>marilyn@example.com</small>
-                                            </div>
-
-                                            <div class="c-footer">
-                                                <button><i class="zmdi zmdi-face-add"></i> Add</button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-3 col-sm-4 col-xs-6">
-                                        <div class="c-item">
-                                            <a href="" class="ci-avatar">
-                                                <img src="img/contacts/4.jpg" alt="">
-                                            </a>
-
-                                            <div class="c-info">
-                                                <strong>Dwight Gilbert</strong>
-                                                <small>dwight@example.com</small>
-                                            </div>
-
-                                            <div class="c-footer">
-                                                <button><i class="zmdi zmdi-face-add"></i> Add</button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-3 col-sm-4 col-xs-6">
-                                        <div class="c-item">
-                                            <a href="" class="ci-avatar">
-                                                <img src="img/contacts/5.jpg" alt="">
-                                            </a>
-
-                                            <div class="c-info">
-                                                <strong>Cody Moreno</strong>
-                                                <small>moreno@example.com</small>
-                                            </div>
-
-                                            <div class="c-footer">
-                                                <button><i class="zmdi zmdi-face-add"></i> Add</button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-3 col-sm-4 col-xs-6">
-                                        <div class="c-item">
-                                            <a href="" class="ci-avatar">
-                                                <img src="img/contacts/6.jpg" alt="">
-                                            </a>
-
-                                            <div class="c-info">
-                                                <strong>Jamie Freeman</strong>
-                                                <small>freeman@example.com</small>
-                                            </div>
-
-                                            <div class="c-footer">
-                                                <button><i class="zmdi zmdi-face-add"></i> Add</button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-3 col-sm-4 col-xs-6">
-                                        <div class="c-item">
-                                            <a href="" class="ci-avatar">
-                                                <img src="img/contacts/7.jpg" alt="">
-                                            </a>
-
-                                            <div class="c-info">
-                                                <strong>Charles Spencer</strong>
-                                                <small>charles@example.com</small>
-                                            </div>
-
-                                            <div class="c-footer">
-                                                <button><i class="zmdi zmdi-face-add"></i> Add</button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-3 col-sm-4 col-xs-6">
-                                        <div class="c-item">
-                                            <a href="" class="ci-avatar">
-                                                <img src="img/contacts/8.jpg" alt="">
-                                            </a>
-
-                                            <div class="c-info">
-                                                <strong>Vickie Reed</strong>
-                                                <small>reed@example.com</small>
-                                            </div>
-
-                                            <div class="c-footer">
-                                                <button><i class="zmdi zmdi-face-add"></i> Add</button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-3 col-sm-4 col-xs-6">
-                                        <div class="c-item">
-                                            <a href="" class="ci-avatar">
-                                                <img src="img/contacts/9.jpg" alt="">
-                                            </a>
-
-                                            <div class="c-info">
-                                                <strong>Lauren Ruiz</strong>
-                                                <small>ruiz@example.com</small>
-                                            </div>
-
-                                            <div class="c-footer">
-                                                <button><i class="zmdi zmdi-face-add"></i> Add</button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-3 col-sm-4 col-xs-6">
-                                        <div class="c-item">
-                                            <a href="" class="ci-avatar">
-                                                <img src="img/contacts/10.jpg" alt="">
-                                            </a>
-
-                                            <div class="c-info">
-                                                <strong>Marlene Vasquez</strong>
-                                                <small>vasquez@example.com</small>
-                                            </div>
-
-                                            <div class="c-footer">
-                                                <button><i class="zmdi zmdi-face-add"></i> Add</button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-3 col-sm-4 col-xs-6">
-                                        <div class="c-item">
-                                            <a href="" class="ci-avatar">
-                                                <img src="img/contacts/11.jpg" alt="">
-                                            </a>
-
-                                            <div class="c-info">
-                                                <strong>Loretta Morrisonz</strong>
-                                                <small>morrisonz@example.com</small>
-                                            </div>
-
-                                            <div class="c-footer">
-                                                <button><i class="zmdi zmdi-face-add"></i> Add</button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-3 col-sm-4 col-xs-6">
-                                        <div class="c-item">
-                                            <a href="" class="ci-avatar">
-                                                <img src="img/contacts/12.jpg" alt="">
-                                            </a>
-
-                                            <div class="c-info">
-                                                <strong>Yvonne Wood</strong>
-                                                <small>wood@example.com</small>
-                                            </div>
-
-                                            <div class="c-footer">
-                                                <button><i class="zmdi zmdi-face-add"></i> Add</button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-3 col-sm-4 col-xs-6">
-                                        <div class="c-item">
-                                            <a href="" class="ci-avatar">
-                                                <img src="img/contacts/13.jpg" alt="">
-                                            </a>
-
-                                            <div class="c-info">
-                                                <strong>Denise Franklin</strong>
-                                                <small>franklin@example.com</small>
-                                            </div>
-
-                                            <div class="c-footer">
-                                                <button><i class="zmdi zmdi-face-add"></i> Add</button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-3 col-sm-4 col-xs-6">
-                                        <div class="c-item">
-                                            <a href="" class="ci-avatar">
-                                                <img src="img/contacts/14.jpg" alt="">
-                                            </a>
-
-                                            <div class="c-info">
-                                                <strong>Joseph Gonzalez</strong>
-                                                <small>gonzalez@example.com</small>
-                                            </div>
-
-                                            <div class="c-footer">
-                                                <button><i class="zmdi zmdi-face-add"></i> Add</button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-3 col-sm-4 col-xs-6">
-                                        <div class="c-item">
-                                            <a href="" class="ci-avatar">
-                                                <img src="img/contacts/15.jpg" alt="">
-                                            </a>
-
-                                            <div class="c-info">
-                                                <strong>Rick Graham</strong>
-                                                <small>graham@example.com</small>
-                                            </div>
-
-                                            <div class="c-footer">
-                                                <button><i class="zmdi zmdi-face-add"></i> Add</button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-3 col-sm-4 col-xs-6">
-                                        <div class="c-item">
-                                            <a href="" class="ci-avatar">
-                                                <img src="img/contacts/16.jpg" alt="">
-                                            </a>
-
-                                            <div class="c-info">
-                                                <strong>Alexander Bailey</strong>
-                                                <small>bailey@example.com</small>
-                                            </div>
-
-                                            <div class="c-footer">
-                                                <button><i class="zmdi zmdi-face-add"></i> Add</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="load-more">
-                                    <a href=""><i class="zmdi zmdi-refresh-alt"></i> Load More...</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                </div>
             </div>
         </section>
 
@@ -950,14 +607,7 @@
         <script src="vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
         <script src="vendors/bootstrap-growl/bootstrap-growl.min.js"></script>
         <script src="vendors/bower_components/moment/min/moment.min.js"></script>
-        <script src="vendors/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
-
-        <!-- LightGallery + Plugins -->
-        <script src="vendors/bower_components/lightgallery/src/js/lightgallery.js"></script>
-        <script src="vendors/bower_components/lightgallery/src/js/lg-video.js"></script>
-        <script src="vendors/bower_components/lightgallery/src/js/lg-fullscreen.js"></script>
-        <script src="vendors/bower_components/lightgallery/src/js/lg-zoom.js"></script>
-        <!-- End LightGallery -->
+        <script src="vendors/bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
 
         <!-- Placeholder for IE9 -->
         <!--[if IE 9 ]>
@@ -966,5 +616,190 @@
 
         <script src="js/functions.js"></script>
         <script src="js/demo.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                var date = new Date();
+                var d = date.getDate();
+                var m = date.getMonth();
+                var y = date.getFullYear();
+
+                var cId = $('#calendar'); //Change the name if you want. I'm also using thsi add button for more actions
+
+                //Generate the Calendar
+                cId.fullCalendar({
+                    header: {
+                        right: '',
+                        center: 'prev, title, next',
+                        left: ''
+                    },
+
+                    theme: true, //Do not remove this as it ruin the design
+                    selectable: true,
+                    selectHelper: true,
+                    editable: true,
+
+                    //Add Events
+                    events: [
+                        {
+                            title: 'Hangout with friends',
+                            start: new Date(y, m, 1),
+                            allDay: true,
+                            className: 'bg-cyan'
+                        },
+                        {
+                            title: 'Meeting with client',
+                            start: new Date(y, m, 10),
+                            allDay: true,
+                            className: 'bg-orange'
+                        },
+                        {
+                            title: 'Repeat Event',
+                            start: new Date(y, m, 18),
+                            allDay: true,
+                            className: 'bg-amber'
+                        },
+                        {
+                            title: 'Semester Exam',
+                            start: new Date(y, m, 20),
+                            allDay: true,
+                            className: 'bg-green'
+                        },
+                        {
+                            title: 'Soccor match',
+                            start: new Date(y, m, 5),
+                            allDay: true,
+                            className: 'bg-lightblue'
+                        },
+                        {
+                            title: 'Coffee time',
+                            start: new Date(y, m, 21),
+                            allDay: true,
+                            className: 'bg-orange'
+                        },
+                        {
+                            title: 'Job Interview',
+                            start: new Date(y, m, 5),
+                            allDay: true,
+                            className: 'bg-amber'
+                        },
+                        {
+                            title: 'IT Meeting',
+                            start: new Date(y, m, 5),
+                            allDay: true,
+                            className: 'bg-green'
+                        },
+                        {
+                            title: 'Brunch at Beach',
+                            start: new Date(y, m, 1),
+                            allDay: true,
+                            className: 'bg-lightblue'
+                        },
+                        {
+                            title: 'Live TV Show',
+                            start: new Date(y, m, 15),
+                            allDay: true,
+                            className: 'bg-cyan'
+                        },
+                        {
+                            title: 'Software Conference',
+                            start: new Date(y, m, 25),
+                            allDay: true,
+                            className: 'bg-lightblue'
+                        },
+                        {
+                            title: 'Coffee time',
+                            start: new Date(y, m, 30),
+                            allDay: true,
+                            className: 'bg-orange'
+                        },
+                        {
+                            title: 'Job Interview',
+                            start: new Date(y, m, 30),
+                            allDay: true,
+                            className: 'bg-green'
+                        },
+                    ],
+
+                    //On Day Select
+                    select: function(start, end, allDay) {
+                        $('#addNew-event').modal('show');
+                        $('#addNew-event input:text').val('');
+                        $('#getStart').val(start);
+                        $('#getEnd').val(end);
+                    }
+                });
+
+                //Create and ddd Action button with dropdown in Calendar header.
+                var actionMenu = '<ul class="actions actions-alt" id="fc-actions">' +
+                                    '<li class="dropdown">' +
+                                        '<a href="" data-toggle="dropdown"><i class="zmdi zmdi-more-vert"></i></a>' +
+                                        '<ul class="dropdown-menu">' +
+                                            '<li class="active">' +
+                                                '<a data-view="month" href="">Month View</a>' +
+                                            '</li>' +
+                                            '<li>' +
+                                                '<a data-view="basicWeek" href="">Week View</a>' +
+                                            '</li>' +
+                                            '<li>' +
+                                                '<a data-view="agendaWeek" href="">Agenda Week View</a>' +
+                                            '</li>' +
+                                            '<li>' +
+                                                '<a data-view="basicDay" href="">Day View</a>' +
+                                            '</li>' +
+                                            '<li>' +
+                                                '<a data-view="agendaDay" href="">Agenda Day View</a>' +
+                                            '</li>' +
+                                        '</ul>' +
+                                    '</div>' +
+                                '</li>';
+
+
+                cId.find('.fc-toolbar').append(actionMenu);
+
+                //Event Tag Selector
+                (function(){
+                    $('body').on('click', '.event-tag > span', function(){
+                        $('.event-tag > span').removeClass('selected');
+                        $(this).addClass('selected');
+                    });
+                })();
+
+                //Add new Event
+                $('body').on('click', '#addEvent', function(){
+                    var eventName = $('#eventName').val();
+                    var tagColor = $('.event-tag > span.selected').attr('data-tag');
+
+                    if (eventName != '') {
+                        //Render Event
+                        $('#calendar').fullCalendar('renderEvent',{
+                            title: eventName,
+                            start: $('#getStart').val(),
+                            end:  $('#getEnd').val(),
+                            allDay: true,
+                            className: tagColor
+
+                        },true ); //Stick the event
+
+                        $('#addNew-event form')[0].reset()
+                        $('#addNew-event').modal('hide');
+                    }
+
+                    else {
+                        $('#eventName').closest('.form-group').addClass('has-error');
+                    }
+                });
+
+                //Calendar views
+                $('body').on('click', '#fc-actions [data-view]', function(e){
+                    e.preventDefault();
+                    var dataView = $(this).attr('data-view');
+
+                    $('#fc-actions li').removeClass('active');
+                    $(this).parent().addClass('active');
+                    cId.fullCalendar('changeView', dataView);
+                });
+            });
+        </script>
     </body>
 </html>

@@ -12,7 +12,6 @@
 
         <link href="vendors/bower_components/animate.css/animate.min.css" rel="stylesheet">
         <link href="vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" rel="stylesheet">
-        <link href="vendors/bower_components/fullcalendar/dist/fullcalendar.min.css" rel="stylesheet">
         <link href="vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet">
 
         <link href="css/app.min.css" rel="stylesheet">
@@ -405,133 +404,401 @@
 
         <aside id="sidebar">
 
-            <!--| MAIN MENU |-->
-            <ul class="side-menu">
-                <li class="sm-sub sms-profile">
-                    <a class="clearfix" href="">
-                        <img src="img/profile-pic.jpg" alt="">
+          <!--| MAIN MENU |-->
+          <ul class="side-menu">
+              <li class="sm-sub sms-profile">
+                  <a class="clearfix" href="">
+                      <img src="img/profile-pic.jpg" alt="">
 
-                        <span class="f-11">
-                            <span class="d-block">Nom Prenom</span>
-                            <small class="text-lowercase">@nom-prenom</small>
-                        </span>
-                    </a>
+                      <span class="f-11">
+                          <span class="d-block">Nom Prenom</span>
+                          <small class="text-lowercase">@nom-prenom</small>
+                      </span>
+                  </a>
 
-                    <ul>
-                        <li><a href="profile-about.html">Mon compte</a></li>
-                        <li><a href="">Mes outils</a></li>
-                        <li><a href="">Déconnexion</a></li>
-                    </ul>
-                </li>
+                  <ul>
+                      <li><a href="profile-about.html">Mon compte</a></li>
+                      <li><a href="">Mes outils</a></li>
+                      <li><a href="">Déconnexion</a></li>
+                  </ul>
+              </li>
 
-                <li>
-                    <a href="admin.html">
-                        <i class="zmdi zmdi-home"></i>
-                        <span>Mon profil</span>
-                    </a>
-                </li>
 
-                <li class="sm-sub">
-                    <a href="">
-                        <i class="zmdi zmdi-collection-text"></i>
-                        <span>Mes projets <span class="label label-warning">New</span></span>
-                    </a>
-                    <ul>
-                        <li><a href="#">Projets</a></li>
-                        <li class="active"><a href="taches.html">Tâches</a></li>
-                        <li><a href="photo-timeline.html">Timelines</a></li>
-                        <li><a href="profile-connections.html">Groupes</a></li>
-                    </ul>
-                </li>
+              <li class="sm-sub active">
+                  <a href="">
+                      <i class="zmdi zmdi-collection-text"></i>
+                      <span>Mon profil</span>
+                  </a>
+                  <ul>
+                      <li ><a href="monProfil.html">Mon profil</a></li>
+                      <li ><a href="taches.html">Mes tâches</a></li>
+                      <li><a href="planning.html">Mon planning</a></li>
+                      <li class="active"><a href="mesInfosPerso.html">Mes informations</a></li>
+                  </ul>
+              </li>
 
-                <li class="active">
-                    <a href="calendar.html">
-                        <i class="zmdi zmdi-calendar"></i>
-                        <span>Calendrier <span class="label label-primary">12</span></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="photo-timeline.html">
-                        <i class="zmdi zmdi-image"></i>
-                        <span>Timeline</span>
-                    </a>
+              <li class="sm-sub">
+                  <a href="">
+                      <i class="zmdi zmdi-collection-text"></i>
+                      <span>Mes projets <span class="label label-warning">New</span></span>
+                  </a>
+                  <ul>
+                      <li><a href="">Projets</a></li>
+                      <li><a href="taches.html">Tâches</a></li>
+                      <li><a href="">Timelines</a></li>
+                      <li class ="active"><a href="profil-connections.html">Groupes</a></li>
+                  </ul>
+              </li>
 
-                </li>
+              <li>
+                  <a href="calendar.html">
+                      <i class="zmdi zmdi-calendar"></i>
+                      <span>Calendrier <span class="label label-primary">12</span></span>
+                  </a>
+              </li>
+              <li class="sm-sub">
+                  <a href="photo-timeline.html">
+                      <i class="zmdi zmdi-image"></i>
+                      <span>Timeline</span>
+                  </a>
 
-                <li>
-                    <a href="messages.html">
+              </li>
+
+              <li >
+                  <a href="messages.html">
+                      <i class="zmdi zmdi-collection-item"></i>
+                      <span>Messages</span>
+                  </a>
+              <li>
+                <li class="sm-sub sms-bottom">
+                    <a href="contacts.html">
                         <i class="zmdi zmdi-collection-item"></i>
-                        <span>Messages</span>
+                        <span>Contacts</span>
                     </a>
-                <li>
-                  <li>
-                      <a href="contacts.html">
-                          <i class="zmdi zmdi-collection-item"></i>
-                          <span>Contacts</span>
-                      </a>
 
 
 
-                </li>
-                <li>
-                    <a href="admin.html">
-                        <i class="zmdi zmdi-home"></i>
-                        <span>Admin</span>
-                    </a>
-                </li>
-            </ul>
+              </li>
+              <li>
+                  <a href="admin.html">
+                      <i class="zmdi zmdi-home"></i>
+                      <span>Admin</span>
+                  </a>
+              </li>
+          </ul>
         </aside>
 
-
         <section id="content">
-            <div class="container c-boxed">
+            <div class="container">
                 <header class="page-header">
-                    <h3>Calendar <small>FullCalendar is a jQuery plugin that provides a full-sized, drag & drop event calendar like the one below. It uses AJAX to fetch events on-the-fly and is easily configured to use your own feed format. It is visually customizable with a rich API.</small></h3>
+                    <h3>MALINDA HOLLAWAY <small>Web/UI Developer, Kandy, Sri Lanka</small></h3>
                 </header>
 
-                <div id="calendar"></div>
+                <div class="tile" id="profile-main">
+                    <div class="pm-overview c-overflow-dark">
+                        <div class="pmo-pic">
+                            <div class="p-relative">
+                                <a href="">
+                                    <img class="img-responsive" src="img/profile-pics/profile-pic-2.jpg" alt="">
+                                </a>
 
-                <!-- Add event -->
-                <div class="modal fade" id="addNew-event" data-backdrop="static" data-keyboard="false">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title">Add an Event</h4>
-                            </div>
-                            <div class="modal-body">
-                                <form class="addEvent" role="form">
-                                    <div class="form-group">
-                                        <label for="eventName">Event Name</label>
-                                        <div class="fg-line">
-                                            <input type="text" class="input-sm form-control" id="eventName" placeholder="eg: Sports day">
-                                        </div>
+                                <div class="dropdown pmop-message">
+                                    <a data-toggle="dropdown" href="" class="pmopm-send">
+                                        <i class="zmdi zmdi-comment-text-alt"></i>
+                                    </a>
+
+                                    <div class="dropdown-menu">
+                                        <textarea placeholder="Write something..."></textarea>
+
+                                        <button class="btn bg-green btn-icon"><i class="zmdi zmdi-mail-send"></i></button>
                                     </div>
+                                </div>
 
-                                    <div class="form-group">
-                                        <label for="eventName">Tag Color</label>
-                                        <div class="event-tag">
-                                            <span data-tag="bg-teal" class="bg-teal selected"></span>
-                                            <span data-tag="bg-red" class="bg-red"></span>
-                                            <span data-tag="bg-pink" class="bg-pink"></span>
-                                            <span data-tag="bg-blue" class="bg-blue"></span>
-                                            <span data-tag="bg-lime" class="bg-lime"></span>
-                                            <span data-tag="bg-green" class="bg-green"></span>
-                                            <span data-tag="bg-cyan" class="bg-cyan"></span>
-                                            <span data-tag="bg-orange" class="bg-orange"></span>
-                                            <span data-tag="bg-purple" class="bg-purple"></span>
-                                            <span data-tag="bg-gray" class="bg-gray"></span>
-                                            <span data-tag="bg-black" class="bg-black"></span>
-                                        </div>
-                                    </div>
-
-                                    <input type="hidden" id="getStart" />
-                                    <input type="hidden" id="getEnd" />
-                                </form>
+                                <a href="" class="pmop-edit">
+                                    <i class="zmdi zmdi-camera"></i> <span class="hidden-xs">Update Profile Picture</span>
+                                </a>
                             </div>
 
-                            <div class="modal-footer">
-                                <button type="submit" class="btn btn-primary btn-sm" id="addEvent">Add Event</button>
-                                <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
+
+                            <div class="pmo-stat">
+                                <h2 class="m-0 c-white">1562</h2>
+                                Total Connections
+                            </div>
+                        </div>
+
+                        <div class="pmo-block pmo-contact hidden-xs">
+                            <h2>Contact</h2>
+
+                            <ul>
+                                <li><i class="zmdi zmdi-phone"></i> 00971 12345678 9</li>
+                                <li><i class="zmdi zmdi-email"></i> malinda-h@gmail.com</li>
+                                <li><i class="zmdi zmdi-facebook-box"></i> malinda.hollaway</li>
+                                <li><i class="zmdi zmdi-twitter"></i> @malinda (twitter.com/malinda)</li>
+                                <li>
+                                    <i class="zmdi zmdi-pin"></i>
+                                    <address class="m-b-0">
+                                        10098 ABC Towers, <br/>
+                                        Dubai Silicon Oasis, Dubai, <br/>
+                                        United Arab Emirates
+                                    </address>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="pmo-block pmo-items hidden-xs">
+                            <h2>Connections</h2>
+
+                            <div class="pmob-body">
+                                <div class="row">
+                                    <a href="" class="col-xs-2">
+                                        <img class="img-avatar" src="img/profile-pics/1.jpg" alt="">
+                                    </a>
+                                    <a href="" class="col-xs-2">
+                                        <img class="img-avatar" src="img/profile-pics/2.jpg" alt="">
+                                    </a>
+                                    <a href="" class="col-xs-2">
+                                        <img class="img-avatar" src="img/profile-pics/3.jpg" alt="">
+                                    </a>
+                                    <a href="" class="col-xs-2">
+                                        <img class="img-avatar" src="img/profile-pics/4.jpg" alt="">
+                                    </a>
+                                    <a href="" class="col-xs-2">
+                                        <img class="img-avatar" src="img/profile-pics/5.jpg" alt="">
+                                    </a>
+                                    <a href="" class="col-xs-2">
+                                        <img class="img-avatar" src="img/profile-pics/6.jpg" alt="">
+                                    </a>
+                                    <a href="" class="col-xs-2">
+                                        <img class="img-avatar" src="img/profile-pics/7.jpg" alt="">
+                                    </a>
+                                    <a href="" class="col-xs-2">
+                                        <img class="img-avatar" src="img/profile-pics/8.jpg" alt="">
+                                    </a>
+                                    <a href="" class="col-xs-2">
+                                        <img class="img-avatar" src="img/profile-pics/1.jpg" alt="">
+                                    </a>
+                                    <a href="" class="col-xs-2">
+                                        <img class="img-avatar" src="img/profile-pics/2.jpg" alt="">
+                                    </a>
+                                    <a href="" class="col-xs-2">
+                                        <img class="img-avatar" src="img/profile-pics/3.jpg" alt="">
+                                    </a>
+                                    <a href="" class="col-xs-2">
+                                        <img class="img-avatar" src="img/profile-pics/4.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pm-body clearfix">
+                        <ul class="tab-nav tn-justified">
+                            <li class="active"><a href="mesInfosPerso.html">A propos de moi</a></li>
+                        </ul>
+
+
+                        <div class="pmb-block">
+                            <div class="pmbb-header">
+                                <h2><i class="zmdi zmdi-equalizer m-r-5"></i> Summary</h2>
+
+                                <ul class="actions">
+                                    <li class="dropdown">
+                                        <a href="" data-toggle="dropdown">
+                                            <i class="zmdi zmdi-more-vert"></i>
+                                        </a>
+
+                                        <ul class="dropdown-menu pull-right">
+                                            <li>
+                                                <a data-pmb-action="edit" href="">Edit</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="pmbb-body p-l-30">
+                                <div class="pmbb-view">
+                                    Sed eu est vulputate, fringilla ligula ac, maximus arcu. Donec sed felis vel magna mattis ornare ut non turpis. Sed id arcu elit. Sed nec sagittis tortor. Mauris ante urna, ornare sit amet mollis eu, aliquet ac ligula. Nullam dolor metus, suscipit ac imperdiet nec, consectetur sed ex. Sed cursus porttitor leo.
+                                </div>
+
+                                <div class="pmbb-edit">
+                                    <div class="fg-line">
+                                        <textarea class="form-control" rows="5" placeholder="Summary...">Sed eu est vulputate, fringilla ligula ac, maximus arcu. Donec sed felis vel magna mattis ornare ut non turpis. Sed id arcu elit. Sed nec sagittis tortor. Mauris ante urna, ornare sit amet mollis eu, aliquet ac ligula. Nullam dolor metus, suscipit ac imperdiet nec, consectetur sed ex. Sed cursus porttitor leo.</textarea>
+                                    </div>
+                                    <div class="m-t-10">
+                                        <button class="btn btn-primary btn-sm">Save</button>
+                                        <button data-pmb-action="reset" class="btn btn-link btn-sm">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pmb-block">
+                            <div class="pmbb-header">
+                                <h2><i class="zmdi zmdi-account m-r-5"></i> Basic Information</h2>
+
+                                <ul class="actions">
+                                    <li class="dropdown">
+                                        <a href="" data-toggle="dropdown">
+                                            <i class="zmdi zmdi-more-vert"></i>
+                                        </a>
+
+                                        <ul class="dropdown-menu pull-right">
+                                            <li>
+                                                <a data-pmb-action="edit" href="">Edit</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="pmbb-body p-l-30">
+                                <div class="pmbb-view">
+                                    <dl class="dl-horizontal">
+                                        <dt>Full Name</dt>
+                                        <dd>Mallinda Hollaway</dd>
+                                    </dl>
+                                    <dl class="dl-horizontal">
+                                        <dt>Gender</dt>
+                                        <dd>Female</dd>
+                                    </dl>
+                                    <dl class="dl-horizontal">
+                                        <dt>Birthday</dt>
+                                        <dd>June 23, 1990</dd>
+                                    </dl>
+                                    <dl class="dl-horizontal">
+                                        <dt>Martial Status</dt>
+                                        <dd>Single</dd>
+                                    </dl>
+                                </div>
+
+                                <div class="pmbb-edit">
+                                    <dl class="dl-horizontal">
+                                        <dt class="p-t-10">Full Name</dt>
+                                        <dd>
+                                            <div class="fg-line">
+                                                <input type="text" class="form-control" placeholder="eg. Mallinda Hollaway">
+                                            </div>
+
+                                        </dd>
+                                    </dl>
+                                    <dl class="dl-horizontal">
+                                        <dt class="p-t-10">Gender</dt>
+                                        <dd>
+                                            <div class="fg-line">
+                                                <select class="form-control">
+                                                    <option>Male</option>
+                                                    <option>Female</option>
+                                                    <option>Other</option>
+                                                </select>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                    <dl class="dl-horizontal">
+                                        <dt class="p-t-10">Birthday</dt>
+                                        <dd>
+                                            <div class="dtp-container dropdown fg-line">
+                                                <input type='text' class="form-control date-picker" data-toggle="dropdown" placeholder="Click here...">
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                    <dl class="dl-horizontal">
+                                        <dt class="p-t-10">Martial Status</dt>
+                                        <dd>
+                                            <div class="fg-line">
+                                                <select class="form-control">
+                                                    <option>Single</option>
+                                                    <option>Married</option>
+                                                    <option>Other</option>
+                                                </select>
+                                            </div>
+                                        </dd>
+                                    </dl>
+
+                                    <div class="m-t-30">
+                                        <button class="btn btn-primary btn-sm">Save</button>
+                                        <button data-pmb-action="reset" class="btn btn-link btn-sm">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="pmb-block">
+                            <div class="pmbb-header">
+                                <h2><i class="zmdi zmdi-phone m-r-5"></i> Contact Information</h2>
+
+                                <ul class="actions">
+                                    <li class="dropdown">
+                                        <a href="" data-toggle="dropdown">
+                                            <i class="zmdi zmdi-more-vert"></i>
+                                        </a>
+
+                                        <ul class="dropdown-menu pull-right">
+                                            <li>
+                                                <a data-pmb-action="edit" href="">Edit</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="pmbb-body p-l-30">
+                                <div class="pmbb-view">
+                                    <dl class="dl-horizontal">
+                                        <dt>Mobile Phone</dt>
+                                        <dd>00971 12345678 9</dd>
+                                    </dl>
+                                    <dl class="dl-horizontal">
+                                        <dt>Email Address</dt>
+                                        <dd>malinda.h@gmail.com</dd>
+                                    </dl>
+                                    <dl class="dl-horizontal">
+                                        <dt>Twitter</dt>
+                                        <dd>@malinda</dd>
+                                    </dl>
+                                    <dl class="dl-horizontal">
+                                        <dt>Skype</dt>
+                                        <dd>malinda.hollaway</dd>
+                                    </dl>
+                                </div>
+
+                                <div class="pmbb-edit">
+                                    <dl class="dl-horizontal">
+                                        <dt class="p-t-10">Mobile Phone</dt>
+                                        <dd>
+                                            <div class="fg-line">
+                                                <input type="text" class="form-control" placeholder="eg. 00971 12345678 9">
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                    <dl class="dl-horizontal">
+                                        <dt class="p-t-10">Email Address</dt>
+                                        <dd>
+                                            <div class="fg-line">
+                                                <input type="email" class="form-control" placeholder="eg. malinda.h@gmail.com">
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                    <dl class="dl-horizontal">
+                                        <dt class="p-t-10">Twitter</dt>
+                                        <dd>
+                                            <div class="fg-line">
+                                                <input type="text" class="form-control" placeholder="eg. @malinda">
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                    <dl class="dl-horizontal">
+                                        <dt class="p-t-10">Skype</dt>
+                                        <dd>
+                                            <div class="fg-line">
+                                                <input type="text" class="form-control" placeholder="eg. malinda.hollaway">
+                                            </div>
+                                        </dd>
+                                    </dl>
+
+                                    <div class="m-t-30">
+                                        <button class="btn btn-primary btn-sm">Save</button>
+                                        <button data-pmb-action="reset" class="btn btn-link btn-sm">Cancel</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -600,7 +867,7 @@
         <script src="vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
         <script src="vendors/bootstrap-growl/bootstrap-growl.min.js"></script>
         <script src="vendors/bower_components/moment/min/moment.min.js"></script>
-        <script src="vendors/bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+        <script src="vendors/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
 
         <!-- Placeholder for IE9 -->
         <!--[if IE 9 ]>
@@ -609,190 +876,5 @@
 
         <script src="js/functions.js"></script>
         <script src="js/demo.js"></script>
-
-        <script type="text/javascript">
-            $(document).ready(function() {
-                var date = new Date();
-                var d = date.getDate();
-                var m = date.getMonth();
-                var y = date.getFullYear();
-
-                var cId = $('#calendar'); //Change the name if you want. I'm also using thsi add button for more actions
-
-                //Generate the Calendar
-                cId.fullCalendar({
-                    header: {
-                        right: '',
-                        center: 'prev, title, next',
-                        left: ''
-                    },
-
-                    theme: true, //Do not remove this as it ruin the design
-                    selectable: true,
-                    selectHelper: true,
-                    editable: true,
-
-                    //Add Events
-                    events: [
-                        {
-                            title: 'Hangout with friends',
-                            start: new Date(y, m, 1),
-                            allDay: true,
-                            className: 'bg-cyan'
-                        },
-                        {
-                            title: 'Meeting with client',
-                            start: new Date(y, m, 10),
-                            allDay: true,
-                            className: 'bg-orange'
-                        },
-                        {
-                            title: 'Repeat Event',
-                            start: new Date(y, m, 18),
-                            allDay: true,
-                            className: 'bg-amber'
-                        },
-                        {
-                            title: 'Semester Exam',
-                            start: new Date(y, m, 20),
-                            allDay: true,
-                            className: 'bg-green'
-                        },
-                        {
-                            title: 'Soccor match',
-                            start: new Date(y, m, 5),
-                            allDay: true,
-                            className: 'bg-lightblue'
-                        },
-                        {
-                            title: 'Coffee time',
-                            start: new Date(y, m, 21),
-                            allDay: true,
-                            className: 'bg-orange'
-                        },
-                        {
-                            title: 'Job Interview',
-                            start: new Date(y, m, 5),
-                            allDay: true,
-                            className: 'bg-amber'
-                        },
-                        {
-                            title: 'IT Meeting',
-                            start: new Date(y, m, 5),
-                            allDay: true,
-                            className: 'bg-green'
-                        },
-                        {
-                            title: 'Brunch at Beach',
-                            start: new Date(y, m, 1),
-                            allDay: true,
-                            className: 'bg-lightblue'
-                        },
-                        {
-                            title: 'Live TV Show',
-                            start: new Date(y, m, 15),
-                            allDay: true,
-                            className: 'bg-cyan'
-                        },
-                        {
-                            title: 'Software Conference',
-                            start: new Date(y, m, 25),
-                            allDay: true,
-                            className: 'bg-lightblue'
-                        },
-                        {
-                            title: 'Coffee time',
-                            start: new Date(y, m, 30),
-                            allDay: true,
-                            className: 'bg-orange'
-                        },
-                        {
-                            title: 'Job Interview',
-                            start: new Date(y, m, 30),
-                            allDay: true,
-                            className: 'bg-green'
-                        },
-                    ],
-
-                    //On Day Select
-                    select: function(start, end, allDay) {
-                        $('#addNew-event').modal('show');
-                        $('#addNew-event input:text').val('');
-                        $('#getStart').val(start);
-                        $('#getEnd').val(end);
-                    }
-                });
-
-                //Create and ddd Action button with dropdown in Calendar header.
-                var actionMenu = '<ul class="actions actions-alt" id="fc-actions">' +
-                                    '<li class="dropdown">' +
-                                        '<a href="" data-toggle="dropdown"><i class="zmdi zmdi-more-vert"></i></a>' +
-                                        '<ul class="dropdown-menu">' +
-                                            '<li class="active">' +
-                                                '<a data-view="month" href="">Month View</a>' +
-                                            '</li>' +
-                                            '<li>' +
-                                                '<a data-view="basicWeek" href="">Week View</a>' +
-                                            '</li>' +
-                                            '<li>' +
-                                                '<a data-view="agendaWeek" href="">Agenda Week View</a>' +
-                                            '</li>' +
-                                            '<li>' +
-                                                '<a data-view="basicDay" href="">Day View</a>' +
-                                            '</li>' +
-                                            '<li>' +
-                                                '<a data-view="agendaDay" href="">Agenda Day View</a>' +
-                                            '</li>' +
-                                        '</ul>' +
-                                    '</div>' +
-                                '</li>';
-
-
-                cId.find('.fc-toolbar').append(actionMenu);
-
-                //Event Tag Selector
-                (function(){
-                    $('body').on('click', '.event-tag > span', function(){
-                        $('.event-tag > span').removeClass('selected');
-                        $(this).addClass('selected');
-                    });
-                })();
-
-                //Add new Event
-                $('body').on('click', '#addEvent', function(){
-                    var eventName = $('#eventName').val();
-                    var tagColor = $('.event-tag > span.selected').attr('data-tag');
-
-                    if (eventName != '') {
-                        //Render Event
-                        $('#calendar').fullCalendar('renderEvent',{
-                            title: eventName,
-                            start: $('#getStart').val(),
-                            end:  $('#getEnd').val(),
-                            allDay: true,
-                            className: tagColor
-
-                        },true ); //Stick the event
-
-                        $('#addNew-event form')[0].reset()
-                        $('#addNew-event').modal('hide');
-                    }
-
-                    else {
-                        $('#eventName').closest('.form-group').addClass('has-error');
-                    }
-                });
-
-                //Calendar views
-                $('body').on('click', '#fc-actions [data-view]', function(e){
-                    e.preventDefault();
-                    var dataView = $(this).attr('data-view');
-
-                    $('#fc-actions li').removeClass('active');
-                    $(this).parent().addClass('active');
-                    cId.fullCalendar('changeView', dataView);
-                });
-            });
-        </script>
     </body>
 </html>
